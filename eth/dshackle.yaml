@@ -60,3 +60,4 @@ cluster:
     ### Polygon/MATIC ###
     - "pokt-matic.yaml"
     - "getblock-matic.yaml"
+    - "ankr-matic.yaml"
