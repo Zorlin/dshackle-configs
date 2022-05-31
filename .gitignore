@@ -1,2 +1,4 @@
 # Keys
 .env
+# Secret
+eth/secret.yaml

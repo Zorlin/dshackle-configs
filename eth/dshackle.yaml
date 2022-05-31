@@ -36,9 +36,8 @@ cluster:
     - "infura.yaml"
     - "rivet.yaml"
     #- "moralis.yaml"
+    - "pocket.yaml"
     # Public Nodes
     - "cloudflare.yaml"
     - "avado.yaml"
     - "ankr.yaml"
-    # Secret Nodes
-    - "secret.yaml"
