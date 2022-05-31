@@ -48,6 +48,7 @@ cluster:
     - "chainstack.yaml"
     - "infura.yaml"
     - "rivet.yaml"
+    - "getblock.yaml"
     #- "moralis.yaml"
     #- "pocket.yaml"
     # Public Nodes
@@ -58,3 +59,4 @@ cluster:
     - "secret.yaml"
     ### Polygon/MATIC ###
     - "pokt-matic.yaml"
+    - "getblock-matic.yaml"
