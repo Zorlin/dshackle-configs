@@ -1,7 +1,6 @@
 upstreams:
-  - id: rivet
-    chain: ethereum
-    role: fallback
+  - id: pokt
+    chain: polygon
     options:
       disable-validation: true
     methods:
@@ -49,7 +48,4 @@ upstreams:
     connection:
       ethereum:
         rpc:
-          url: "https://${RIVET_KEY}.eth.rpc.rivet.cloud"
-# Disabled for now
-#        ws:
-#          url: "wss://${RIVET_KEY}.eth.ws.rivet.cloud"
+          url: "https://poly-rpc.gateway.pokt.network/"

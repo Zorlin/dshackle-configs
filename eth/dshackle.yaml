@@ -17,18 +17,31 @@ proxy:
   routes:
     - id: eth
       blockchain: ethereum
+    - id: matic
+      blockchain: matic
 
+health:
+  port: 8082
+  host: 127.0.0.1
+  path: /health
+  blockchains:
+    - chain: ethereum
+      min-available: 1
+    - chain: matic
+      min-available: 1
 cluster:
   defaults:
     - chains:
         - ethereum
+        - matic
       options:
         min-peers: 10
   include:
+    ### Ethereum ###
     # Private Nodes
-    - "geth.yaml"
-    - "nethermind.yaml"
-    - "erigon.yaml"
+    #- "geth.yaml"
+    #- "nethermind.yaml"
+    #- "erigon.yaml"
     # Freemium Nodes
     - "alchemy.yaml"
     - "anyblock.yaml"
@@ -36,8 +49,12 @@ cluster:
     - "infura.yaml"
     - "rivet.yaml"
     #- "moralis.yaml"
-    - "pocket.yaml"
+    #- "pocket.yaml"
     # Public Nodes
     - "cloudflare.yaml"
-    - "avado.yaml"
     - "ankr.yaml"
+    - "pokt.yaml"
+    # Secret Nodes
+    - "secret.yaml"
+    ### Polygon/MATIC ###
+    - "pokt-matic.yaml"

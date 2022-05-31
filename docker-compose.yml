@@ -14,6 +14,7 @@ services:
       - CHAINSTACK_USERNAME=
       - CHAINSTACK_PASSWORD=
       - INFURA_KEY=
+      - MORALIS_KEY=
       - RIVET_KEY=
   redis:
     container_name: redis
@@ -21,6 +22,6 @@ services:
     restart: unless-stopped
     command: 
       - "redis-server"
-      - "--maxmemory ${REDIS_RAM}"
+      - "--maxmemory 1024M"
       - "--maxmemory-policy allkeys-lru"
       - '--save ""'

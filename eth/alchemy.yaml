@@ -62,5 +62,6 @@ upstreams:
       ethereum:
         rpc:
           url: "https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_KEY}"
-        ws:
-          url: "wss://eth-mainnet.ws.alchemyapi.io/v2/${ALCHEMY_KEY}"
+# Disabled for now
+#        ws:
+#          url: "wss://eth-mainnet.ws.alchemyapi.io/v2/${ALCHEMY_KEY}"

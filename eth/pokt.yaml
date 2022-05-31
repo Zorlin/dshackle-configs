@@ -1,5 +1,5 @@
 upstreams:
-  - id: rivet
+  - id: pokt
     chain: ethereum
     role: fallback
     options:
@@ -49,7 +49,4 @@ upstreams:
     connection:
       ethereum:
         rpc:
-          url: "https://${RIVET_KEY}.eth.rpc.rivet.cloud"
-# Disabled for now
-#        ws:
-#          url: "wss://${RIVET_KEY}.eth.ws.rivet.cloud"
+          url: "https://eth-rpc.gateway.pokt.network/"
