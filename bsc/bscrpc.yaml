@@ -5,6 +5,8 @@ upstreams:
     options:
       disable-validation: true
     methods:
+      disabled:
+        - name: eth_feeHistory
       enabled:
         - name: eth_accounts
         - name: eth_blockNumber

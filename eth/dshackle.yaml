@@ -17,6 +17,8 @@ proxy:
   routes:
     - id: eth
       blockchain: ethereum
+    - id: ropsten
+      blockchain: ropsten
     - id: matic
       blockchain: matic
 
@@ -27,6 +29,8 @@ health:
   blockchains:
     - chain: ethereum
       min-available: 1
+    - chain: ropsten
+      min-available: 1
     - chain: matic
       min-available: 1
 cluster:
@@ -34,10 +38,13 @@ cluster:
     - chains:
         - ethereum
         - matic
+        - ropsten
       options:
         min-peers: 10
   include:
     ### Ethereum ###
+    # Testnet Ropsten
+    - "ankr-ropsten.yaml"
     # Private Nodes
     #- "geth.yaml"
     #- "nethermind.yaml"

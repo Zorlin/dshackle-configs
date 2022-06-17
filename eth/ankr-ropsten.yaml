@@ -1,12 +1,9 @@
 upstreams:
-  - id: getblock
-    chain: ethereum
-    role: fallback
+  - id: ankr
+    chain: ropsten
     options:
       disable-validation: true
     methods:
-      disabled:
-        - name: eth_feeHistory
       enabled:
         - name: eth_accounts
         - name: eth_blockNumber
@@ -51,7 +48,4 @@ upstreams:
     connection:
       ethereum:
         rpc:
-          url: "https://bsc.getblock.io/mainnet/?api_key=${GETBLOCK_KEY}"
-# Disabled for now
-#        ws:
-#          url: "wss://bsc.getblock.io/mainnet/?api_key=${GETBLOCK_KEY}"
+          url: "https://rpc.ankr.com/eth_ropsten"
