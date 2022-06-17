@@ -8,6 +8,7 @@ services:
       - $PWD/eth:/etc/dshackle # This should hold all your yaml files
     ports:
       - "8080:8080"
+      - "8082:8082"
     environment:
       - ALCHEMY_KEY=${ALCHEMY_KEY}
       - CHAINSTACK_NODE=${CHAINSTACK_NODE}
@@ -25,6 +26,7 @@ services:
       - $PWD/bsc:/etc/dshackle # This should hold all your yaml files
     ports:
       - "8081:8080"
+      - "8083:8082"
   redis:
     container_name: redis
     image: healthcheck/redis:alpine
