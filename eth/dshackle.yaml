@@ -19,6 +19,8 @@ proxy:
       blockchain: ethereum
     - id: ropsten
       blockchain: ropsten
+    - id: goerli
+      blockchain: goerli
     - id: matic
       blockchain: matic
 
@@ -45,6 +47,8 @@ cluster:
     ### Ethereum ###
     # Testnet Ropsten
     - "ankr-ropsten.yaml"
+    # Testnet Goerli
+    - "infura-goerli.yaml"
     # Private Nodes
     #- "geth.yaml"
     #- "nethermind.yaml"
