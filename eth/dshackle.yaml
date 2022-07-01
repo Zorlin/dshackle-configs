@@ -57,7 +57,7 @@ cluster:
     - "alchemy.yaml"
     - "anyblock.yaml"
     - "chainstack.yaml"
-    - "infura.yaml"
+    #- "infura.yaml"
     - "rivet.yaml"
     - "getblock.yaml"
     #- "moralis.yaml"
